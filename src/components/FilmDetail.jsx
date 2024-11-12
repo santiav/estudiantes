@@ -10,6 +10,7 @@ const FilmDetail = () => {
     const fetchData = async () => {
       const data = await fetch(`https://swapi.dev/api/films/${id}`);
       const response = await data.json();
+
       setFilm(response);
       setLoading(false);
       console.log(response);
