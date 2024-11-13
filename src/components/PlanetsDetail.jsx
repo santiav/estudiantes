@@ -21,7 +21,7 @@ const PlanetDetail = () => {
   }, [id]);
 
   if (loading){
-    return <div>Cargando... </div>
+    return <div className="flex justify-center items-center text-white text-3xl h-screen"><strong>Cargando...</strong></div>;
   }
 
   if (!planet ) {
@@ -32,8 +32,8 @@ const PlanetDetail = () => {
 // climate, population, gravity, terrain
 
   return (
-    <div>
-      <h2>{planet.name}</h2>
+    <div className='text-white'>
+      <h2 className='text-5xl text-center m-5 font-bold'>{planet.name}</h2>
       <p><strong>Clima:</strong>{planet.climate}</p>
       <p><strong>Poblacion:</strong>{planet.population}</p>
       <p><strong>Gravedad:</strong>{planet.gravity}</p>

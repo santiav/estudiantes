@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .li-group {
+        @apply px-4 py-2 bg-white hover:bg-slate-600 hover:text-white border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out
+    }
+}

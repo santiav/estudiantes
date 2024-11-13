@@ -2,22 +2,29 @@ import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
 function Layout() {
   return (
-    <div>
+    <div  className="bg-[url('https://wallpapers.com/images/featured/star-wars-plzcoaffexgf4h81.jpg')] h-screen">
       <header>
-        <h1>Star Wars Movies</h1>
-        <nav>
-          <ul>
+      <nav>
+          <ul className="bg-slate-600 p-5 flex gap-2">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" className="text-white">
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/films">Peliculas</NavLink>
+              <NavLink to="/films" className="text-white">
+                Peliculas
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/people">Personajes</NavLink>
+              <NavLink to="/people" className="text-white">
+                Personajes
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/planets">Planetas</NavLink>
+              <NavLink to="/planets" className="text-white">
+                Planetas
+              </NavLink>
             </li>
           </ul>
         </nav>

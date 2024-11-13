@@ -18,7 +18,7 @@ const Planets = () => {
   }, []);
 
   if (loading) {
-    return <div>Cargando Planetas... </div>;
+    return <div className="flex justify-center items-center text-white text-3xl h-screen"><strong>Cargando...</strong></div>;
   }
 
   return (
